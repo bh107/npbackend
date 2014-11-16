@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    usage.rst
+   snippets.rst
    apidocs.rst
 
 Indices and tables
