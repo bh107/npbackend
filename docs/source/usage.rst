@@ -1,12 +1,14 @@
 Usage
 =====
 
-Using ``npbackend`` requires enabling the module and choosing a ``target``.
+Using **npbackend** requires enabling the module and choosing a ``target``.
 
-Enabling ``npbackend``
+.. note:: Since **npbackend** is integrated with `Bohrium <http://www.bh107.org>`_, the module name is ``bohrium`` and not ``npbackend``.
+
+Enabling **npbackend**
 ----------------------
 
-The least intrusive method of enabling ``npbackend`` is invoking your Python
+The least intrusive method of enabling ``bohrium`` is invoking your Python
 program with the module loaded. Which means instead of invoking your
 Python/NumPy program like this::
 
@@ -14,12 +16,12 @@ Python/NumPy program like this::
 
 You will invoke it like this instead::
 
-  python -m npbackend my_program.py
+  python -m bohrium my_program.py
 
 Which will effectively overrule the ``numpy`` module and instead use
-``npbackend``. That is all it takes.
+``bohrium``. That is all it takes.
 
-Another approach is replacing your ``import numpy`` statements with ``import npbackend``. For example, replacing:
+Another approach is replacing your ``import numpy`` statements with ``import bohrium``. For example, replacing:
 
 .. code-block:: python
 
@@ -29,12 +31,12 @@ With:
 
 .. code-block:: python
 
-   import npbackend as np
+   import bohrium as np
 
-Choosing a ``npbackend`` target
+Choosing a **npbackend** target
 -------------------------------
 
-``npbackend`` will default to using Bohrium as the backend target. Changing
+**npbackend** will default to using Bohrium as the backend target. Changing
 backend target is done via the ``NPBE_TARGET`` environment variable. Valid
 values for ``NPBE_TARGET`` are:
 
@@ -48,7 +50,7 @@ values for ``NPBE_TARGET`` are:
 If you which to use something else than the default target, then you can invoke
 your Python/NumPy application with::
 
-  NPBE_TARGET="numexpr" python -m npbackend my_program.py
+  NPBE_TARGET="numexpr" python -m bohrium my_program.py
 
 Or if your changed import statements::
 

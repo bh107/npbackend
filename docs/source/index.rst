@@ -1,16 +1,16 @@
-.. npbackend documentation master file, created by
-   sphinx-quickstart on Sat Nov 15 15:00:55 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to npbackend's documentation!
 =====================================
+
+The **npbackend** is a backend interface to Python/NumPy that translates NumPy array operations into a sequence of Python function calls. By implementing these Python functions, external libraries can accelerate NumPy array operations without any modifications to the user Python/NumPy code.
+
+For now, **npbackend** is integrated with the `Bohrium <http://www.bh107.org>`_ project and cannot be installed separately (the source code can be found `here <https://github.com/bh107/bohrium/tree/master/bridge/npbackend>`_) but it is our intension to decouple **npbackend** out of `Bohrium <http://www.bh107.org>`_ to become a standalone project.
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   installation.rst
    usage.rst
    snippets.rst
    apidocs.rst
