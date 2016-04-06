@@ -39,4 +39,4 @@ And then with **npbackend** using NumPy as backend::
     user 14.02
     sys 0.34
 
-Because of the memory allocation reuse, **npbackend** actually outperforms native NumPy. However, this is only the case we allocate and free a significant number of large arrays.
+Because of the memory allocation reuse, **npbackend** actually outperforms native NumPy. However, this is only the case because we allocate and free a significant number of large arrays.
