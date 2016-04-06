@@ -12,8 +12,7 @@ Contents:
 
    installation.rst
    usage.rst
-   snippets.rst
-   apidocs.rst
+   new_target.rst
 
 Indices and tables
 ==================
